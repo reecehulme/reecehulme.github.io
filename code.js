@@ -2,23 +2,22 @@
 window.onload = function () {
 
   // get a reference to all of the rooms
+  var roomWitch = document.getElementById('roomWitch')
   var roomA = document.getElementById('roomA')
-  var roomB = document.getElementById('roomB')
 
   // attach button click handlers
-  console.log(document.getElementById('button1'))
   document.getElementById('button1').onclick = function () {
-    roomA.style.display = 'none'
-    roomB.style.display = 'block'
+    roomWitch.style.display = 'none'
+    roomA.style.display = 'block'
   }
 
   document.getElementById('button2').onclick = function () {
-    roomA.style.display = 'block'
-    roomB.style.display = 'none'
+    roomWitch.style.display = 'block'
+    roomA.style.display = 'none'
   }
 
 
 
   // finally, show the first room so the player can begin
-  roomA.style.display = 'block'
+  roomWitch.style.display = 'block'
 }

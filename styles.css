@@ -16,13 +16,19 @@ h2 {
 /* Style by class names */
 
 .room {
-  display: none;
+  display: block;;
   padding: 10px;
 }
 
 /* Style Specific Id's */
 
-#roomA { background-color: yellow; }
-#roomB { background-color: lightgreen; }
-
-
+#roomWitch { background-color: Grey; }
+#roomA { background-color: Orange ; }
+#roomB { background-color: Blue; color: white; }
+#roomC { background-color: Yellow ; }
+#roomD { background-color: Pink ; }
+#roomE { background-color: Brown; color: white; }
+#roomF { background-color: Lightgrey ; }
+#roomG { background-color: Green ; }
+#roomH { background-color: Purple; color: white ; }
+#roomMinotaur { background-color: Red ; }
