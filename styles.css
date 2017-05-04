@@ -1,0 +1,28 @@
+/* Style by type of element */
+
+body {
+  background-color: lightyellow;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+/* Style by class names */
+
+.room {
+  display: none;
+  padding: 10px;
+}
+
+/* Style Specific Id's */
+
+#roomA { background-color: yellow; }
+#roomB { background-color: lightgreen; }
+
+
