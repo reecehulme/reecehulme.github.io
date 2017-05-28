@@ -10,10 +10,12 @@
 
   <div id="roomWitch" class="room">
     <h2>Witch's Lair</h2>
-    <p>
-      <strong>WITCH:</strong> Hellloooooo. I have two items here. One is magic string.
-      The other, a sword. You may only choose one.
-    </p>
+    <div class="text">
+      <p>
+        <strong>WITCH:</strong> Hellloooooo. I have two items here. One is magic string.
+        The other, a sword. You may only choose one.
+      </p>
+    </div>
     <button type="button" id="rwString">choose string</button>
     <button type="button" id="rwSword">choose sword</button>
     <button type="button" id="rwAdvance">Go To Room A</button>
@@ -21,67 +23,98 @@
 
   <div id="roomA" class="room">
     <h2>Room A</h2>
-    <h3>My search begins here</h3>
-    <button type="button" id="button1">Go to Room B</button>
+    <div class="text">
+      <h3>My search begins here</h3>
+    </div>
+    <button type="button" id="raGoback">Go to Witches Lair</button>
+    <button type="button" id="raAdvance">Go to Room B</button>
   </div>
 
   <div id="roomB" class="room">
     <h2>RoomB</h2>
-    <h3>That Minotaur has no idea what's coming for him</h3>
-    <button type="button" id="button2">Go  to Room C</button>
-    <button type="button" id="button3">Go  to Room D</button>
+    <div class="text">
+      <h3>That Minotaur has no idea what's coming for him</h3>
+    </div>
+    <button type="button" id="rbAdvance">Go  to Room C</button>
+    <button type="button" id="rbGoback">Go  to Room A</button>
+    <button type="button" id="rbAlternate">Go  to Room D</button>
   </div>
 
   <div id="roomC" class="room">
     <h2>RoomC</h2>
-    <h3>Hmm,a key, this could be useful</h3>
-    <button type="button" id="button4">Go back to Room B</button>
+    <div class="text">
+      <h3>Hmm,a key, this could be useful</h3>
+      <button type="button" id="rcGoback">Go back to Room B</button>
+    </div>
   </div>
+
   <div id="roomD" class="room">
     <h2>RoomD</h2>
-    <h3>There are two doors here, and one looks locked</h3>
-    <button type="button" id="button5">Go to Room E</button>
-    <button type="button" id="button6">Unlock Room F</button>
+    <div class="text">
+      <h3>There are two doors here, and one looks locked</h3>
+    </div>
+    <button type="button" id="rdGoback">Go to Room B</button>
+    <button type="button" id="rdPrincess">Go to Room E</button>
+    <button type="button" id="rdUnlock">Unlock Room F</button>
+    <button type="button" id="rdAdvance">Go to Room G</button>
   </div>
 
   <div id="roomE" class="room">
     <h2>RoomE</h2>
-    <strong>Princess</strong>:<p> Hi, I have some things that will be useful, you can only take one </p>
-    <button type="button" id="button7">Go back to Room D</button>
-    <button type="button" id="re poison">Choose poison</button>
-    <button type="button" id="re knife">Choose knife</button>
+    <div class="text">
+      <strong>Princess</strong>:<p> Hi, I have some things that will be useful, you can only take one </p>
+    </div>
+    <button type="button" id="reGoback">Go back to Room D</button>
+    <button type="button" id="rePoison">Choose poison</button>
+    <button type="button" id="reKnife">Choose knife</button>
 
   </div>
 
   <div id="roomF" class="room">
     <h2>RoomF</h2>
-    <h3>It says here that the Minotaur came from Chios and is immune to toxins</h3>
-    <button type="button" id="button8">Go back to Room D</button>
+    <div class="text">
+      <h3>It says here that the Minotaur came from Chios and is immune to toxins</h3>
+    </div>
+    <button type="button" id="rfGoback">Go back to Room D</button>
   </div>
 
   <div id="roomG" class="room">
     <h2>RoomG</h2>
-    <h3>Where is this stupid Minotaur</h3>
-    <button type="button" id="button9">Go to roomF</button>
+    <div class="text">
+      <h3>Where is this stupid Minotaur</h3>
+    </div>
+    <button type="button" id="rgAdvance">Go to room H</button>
+    <button type="button" id="rgGoback">Go to room D</button>
   </div>
 
   <div id="roomH" class="room">
     <h2>RoomH</h2>
-    <h3>A flute, good thing I know some sleepy songs</h3>
-    <button type="button" id="button10">Go back to The Minotaur</button>
+    <div class="text">
+      <h3>A flute, good thing I know some sleepy songs</h3>
+    </div>
+    <button type="button" id="rhAdvance">Go to The Minotaur</button>
+    <button type="button" id="rhGoback">Go to room G</button>
   </div>
 
-  <div id="roomMinotaur" class="room">
+  <div id="roomM" class="room">
     <h2>The Minotaur</h2>
-    <strong> MINOTAUR </strong> <p> Meat, Meat, want man meat eat!</p>
-    <strong> PLAYER </strong> <p> Let's dance </p>
-    <button type="button" id="Ap">Poison</button>
-    <button type="button" id="As">Sword</button>
-    <button type="button" id="Ak">Knife</button>
-    <button type="button" id="pht">Happy Tune</button>
-    <button type="button" id="pst">Sleepy tune</button>
+    <div class="text">
+      <strong> MINOTAUR </strong> <p> Meat, Meat, want man meat eat!</p>
+      <strong> PLAYER </strong> <p> Let's dance </p>
+    </div>
+    <button type="button" id="rmUsePoison">Poison</button>
+    <button type="button" id="rmUseSword">Sword</button>
+    <button type="button" id="rmUseKnife">Knife</button>
+    <button type="button" id="rmPlayHappyTune">Happy Tune</button>
+    <button type="button" id="rmPlaySleepyTune">Sleepy tune</button>
+  </div>
 
+  <div id='roomEnd' class="room">
+    <h2>The End</h2>
+  </div>
 
+  <div id='roomWin' class="room">
+    <h2>'You Win!!!!!!!'</h2>
   </div>
 </body>
 
